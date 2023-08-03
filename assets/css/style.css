@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.title{
+    font-family: 'Grand Hotel', cursive;
+}
+
+/* ============ typography ========= */
+
+h1{
+    font-weight: bolder;
+}
+h2{
+    font-weight: bolder;
+}
+h3{
+    font-weight: bolder;
+}
+h4{
+    font-weight: bolder;
+}
+.display-2{
+    font-weight: bolder;
+}
+.display-3{
+    font-weight: bolder;
+}
+.main_color{
+    color: #ffc200 !important;
+}
+.text_black{
+    color: black;
+}
+.text_white{
+    color: #ffffff;
+}
+.text_white_2{
+    color: #ffffff;
+}
+@media (max-width:992px){
+    .text_white_2{
+        color: black;
+    }
+}
+
+/* ============ End typography ========= */
+
+/* ============= section 1 ========== */
+.s1_bg{
+    background: url(../images/s1_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff !important;
+}
+.offcanvas{
+    background-color: black;
+    opacity: 0.8;
+}
+.btn-close{
+    background-color: #ffffff !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #ffffff !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #ffc200 !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link::before{
+    content: '';
+    position: absolute;
+    border-top: 2px solid #fa8500;
+    width: 0%;
+    bottom: 0;
+    transition: all 0.5s ;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover:before{
+    width: 100%;
+}
+.from{
+    width: 0px;
+    height: 0px;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+}
+.search{
+
+}
+.search:hover>.from{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+}
+.benar{
+    margin: 70px 0px;
+}
+.main_btn{
+    position: relative;
+    background-color: #ffc200;
+    border-radius: 0;
+    width: 200px;
+    overflow: hidden;
+    color: black !important;
+    z-index: 1 !important;
+}
+.main_btn::after{
+    content: " ";
+    position: absolute;
+    background-color: #fa8500;
+    inset: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+.main_btn:hover:after{
+ transform: translateX(0);
+}
+
+@media (max-width:992px){
+    .benar{
+        margin: 0px 0px;
+    }
+
+}
+/* ============= End section 1 ========== */
+
+/* =============== section 2 ============= */
+.s2_bg{
+    color: black !important;
+    background-color: #ffffff;
+}
+.animet{
+    transition: all 0.5s;
+}
+.animet:hover{
+    transform: scale(1.15);
+}
+/* =============== End section 2 ============= */
+
+/*=============== section 3 =============  */
+.s3_bg{
+    background: url(../images/s3_png_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*=============== End section 3 =============  */
+
+/* ============== section 4 ============== */
+.s4_bg{
+    background: url(../images/s4_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.circle{
+    position: relative;
+}
+.circle_text{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+/* ============== End section 4 ============== */
+
+/* =============== section 5 ================ */
+.s5_bg{
+    background-image: url(../images/s5_png_bg2.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+/* =============== End section 5 ================ */
+
+
+/* =============== section 6 ================ */
+.s6_bg{
+    background: url(../images/s6_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* =============== End section 6 ================ */
+
+/* =============== section 7 =========== */
+.s7_bg{
+    background-color: black;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: #faa200;
+}
+/* =============== End section 7 =========== */
+
